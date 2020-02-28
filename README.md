@@ -1,6 +1,8 @@
 ## LDICE Frontend (Client app)
 Front end for Ldice - provably fair dice game made with lisk-sdk
 
+* [LDICE core repository](http://github.com/thepool-io/ldice)
+
 ```sh
 yarn install
 yarn start
