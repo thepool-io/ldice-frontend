@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+export function subscribeToNodeInfo(socket, cb) {
+  socket.on('node', data => cb(null, data));
+}
+
+export function subscribeToBets(socket, cb) {
+  socket.on('bets', data => cb(null, data));
+}
+
+export function subscribeToConnect(socket, cb) {
+  socket.on('connect', () => cb());
+}
+
+export function subscribeToDisconnect(socket, cb) {
+  socket.on('disconnect', () => cb());
+}

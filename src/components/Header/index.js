@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+import React from 'react';
+import Logo from '../../assets/images/ldicelogo.png';
+import './header.css';
+
+export class Header extends React.Component {
+
+  render() {
+    return (
+      <div className="Header-container">
+
+        <div className="Logo">
+          <img className="Logo-img" src={Logo} alt="Ldice logo"/>
+          <span>Provably fair dice game made with lisk-sdk</span>
+        </div>
+        <div className="Menu"/>
+      </div>
+    )
+  }
+}
+

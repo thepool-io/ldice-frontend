@@ -1,2 +1,16 @@
-# ldice-frontend
- 
+## LDICE Frontend (Client app)
+Front end for Ldice - provably fair dice game made with lisk-sdk
+
+```sh
+yarn install
+yarn start
+```
+
+# Tasks to complete
+-Fix hang up with re-logging<br>
+-account.js refresh on tab visible<br>
+-fix treasury highlighting and update<br>
+-Add highlighting on new bet<br>
+
+# License
+MIT

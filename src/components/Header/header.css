@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,33 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+.Header-container {
+  position: relative;
+  z-index: 999;
+  background-color: #FAFAFA;
+  width: 100vw;
+  padding: 1rem 2rem 1rem 4rem;
+  /* height: 100px;*/
+  height: 2rem;
+  box-shadow: 0 0 20px 0 rgba(18, 24, 58, 0.08);
+}
+
+.Logo {
+  position: relative;
+  float: left;
+  display: flex;
+    flex-direction: column;
+    width: auto;
+ 
+}
+.Logo-img{
+	max-height: 3rem;
+  max-width: 11rem;
+}
+
+.Menu {
+  position: relative;
+  float: right;
+}

@@ -1,0 +1,119 @@
+/*
+MIT License
+
+Copyright (c) 2020 ThePool.io
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+.ldice-container {
+  width: 100%;
+  background-color: #f6fafd !important;
+  height: auto;
+  border-radius: 5px;
+  padding: 3rem;
+  padding-top: 2rem;
+}
+
+.Slider-container {
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+.Bet-input {
+  height: 2rem;
+  margin: 0.5rem;
+  font-size: 20px;
+  text-align: center;
+  width: 30%;
+
+}
+
+@media only screen and (max-width: 1350px) {
+  .ldice-container {
+    width: 100%;
+    background-color: #f6fafd !important;
+    height: auto;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.Bet-container {
+  margin-right: 2rem;
+  max-width: 35%;
+
+}
+
+@media only screen and (max-width: 1350px) {
+  .Bet-container {
+    width: 100%;
+    max-width: 85%;
+    margin: auto;
+  }
+
+}
+
+.Bet-error {
+  margin: 10px;
+  font-weight: bold;
+  color: red;
+}
+
+.Bet-result {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.Bet-won {
+  color: green;
+}
+
+.Bet-lose {
+  color: red;
+}
+
+.Btn-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .Btn-container {
+    flex-wrap: nowrap;
+  }
+}
+
+.MuiSlider-markLabel {
+  top: 2rem !important;
+  color: rgba(0, 0, 0, 0.54);
+  position: absolute;
+  font-size: 0.875rem;
+  transform: translateX(-50%);
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  line-height: 1.43;
+  white-space: nowrap;
+  letter-spacing: 0.01071em;
+}

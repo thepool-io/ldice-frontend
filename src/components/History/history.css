@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,44 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+.History-container {
+  text-align: right;
+  width: 100%;
+  padding: 0rem !important;
+}
+
+.Full-height {
+  height: auto !important;
+}
+
+.Table-link {
+  text-decoration: none;
+  color: #16a3fe;
+}
+
+@media only screen and (max-width: 1350px) {
+  .History-container {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .MuiTablePagination-actions {
+    display: none;
+  }
+
+}
+
+.MuiTableCell-stickyHeader {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: sticky;
+  background-color: #16a3fe !important;
+  color: white !important;
+  color: white;
+}

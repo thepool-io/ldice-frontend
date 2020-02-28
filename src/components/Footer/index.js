@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,28 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import './footer.css';
+
+import { GitHub } from '@material-ui/icons';
+
+export class Footer extends React.Component {
+
+  render() {
+    return (
+      <div className="Footer">
+        <div className="Footer-container">
+          <span> made with &hearts; by ThePool Lisk delegate</span>
+        </div>
+        <div className="Footer-container">
+          <Button className="GitHub-bttn" aria-label="Github repository" href="https://github.com/thepool-io/ldice" target="_blank">
+            &nbsp;<GitHub />&nbsp;Github repository
+          </Button>
+        </div>
+      </div>
+    )
+  }
+}

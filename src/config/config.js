@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,35 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+const NodeHttp = "http://ldice.thepool.io:4000";
+const NodeWebsocket = "http://ldice.thepool.io:5005";
+const ExplorerNode = 'http://ldice.thepool.io:6040';
+const ChainStartDate = new Date(Date.UTC(2020, 2, 11, 17, 0, 0, 0)).toISOString();
+const GenesisPayloadHash = "304b5c4b96ff6ff1230689c25db983a63a077b91cc881d18042d1f333ba65662";
+const NetworkID = "ldice";
+const TreasuryAddress = "0L";
+const TokenSymbol = "LDT";
+const HighlightDelay = 1500;
+const NotificationsDelay = 3000;
+const NotificationsDelayOnScreen = true;
+const MinimumAmount = 0.1;
+
+const DefaultPassphrase = 'wagon stock borrow episode laundry kitten salute link globe zero feed marble';
+
+export {
+  NodeHttp,
+  NodeWebsocket,
+  ChainStartDate,
+  TreasuryAddress,
+  TokenSymbol,
+  DefaultPassphrase,
+  MinimumAmount,
+  ExplorerNode,
+  HighlightDelay,
+  GenesisPayloadHash,
+  NetworkID,
+  NotificationsDelay,
+  NotificationsDelayOnScreen,
+}

@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+.Stats-bttn {
+  font-size: 0.9rem!important;
+  margin: 30px;
+}
+
+.Stats-label {
+  text-align: left;
+  font-weight: bold;
+  color: #16a3fe;
+}
+
+.blue {
+  color: #3f51b5;
+}
+
+.Stats-link {
+  text-decoration: none;
+  color: #16a3fe;
+}

@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+import { store } from 'react-notifications-component';
+import { config } from "./../config";
+
+export function dispatchNotification(title, message, style) {
+  store.addNotification({
+    title: title,
+    message: message,
+    type: style,
+    insert: "bottom",
+    container: "bottom-right",
+    animationIn: ["animated", "fadeIn"],
+    animationOut: ["animated", "fadeOut"],
+    dismiss: {
+      duration: config.NotificationsDelay,
+      onScreen: config.NotificationsDelayOnScreen
+    }
+  });
+};

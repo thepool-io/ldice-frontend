@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+export function requestStatus(socket, cb) {
+  socket.on('status', data => cb(null, data));
+  socket.emit('status');
+}
+
+export function requestLastBets(socket, cb) {
+  socket.on('lastbets', data => cb(null, data));
+  socket.emit('lastbets');
+}
+
+export function requestAccount(address, full, socket, cb) {
+  socket.on('account', data => cb(null, data));
+  socket.emit('account', {"address":address,"full":full});
+}

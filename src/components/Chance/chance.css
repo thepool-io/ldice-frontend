@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2020 ThePool.io
@@ -19,3 +20,74 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+.Chance-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+      flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px!important;
+    margin-bottom: 2rem;
+
+}
+@media only screen and (max-width: 1350px) {
+	.Chance-container {
+		width: 100%;
+		flex-direction: column;
+		padding: 0px!important;
+		width: auto!important;
+		height: auto!important;
+	}
+	h1 {
+		display: none;
+	}
+	
+}
+
+.blurb {
+	display: flex;
+	/*background-color: green;*/
+	/*margin-bottom: 2rem;*/
+	flex-direction: column;
+	padding: 1rem;
+
+}
+
+@media only screen and (max-width: 1350px) {
+	.blurb {
+
+	}}
+.Blurb:firstchild {
+	margin-top: 0rem;
+}
+@media only screen and (max-width: 1150px) {
+	.Blurb-content {
+font-size: 1.5rem;
+	}}
+
+.Blurb-titel {
+	width: 100%;
+    position: relative;
+    color: #122273;
+
+}
+
+.Blurb-content {
+	width: 100%;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #16a3fe;
+}
+.Blurb-info {
+	color: #ff5b00;
+}
+
+.highlight-green {
+	color: darkgreen;
+}
+.highlight-red {
+	color: darkred;
+}

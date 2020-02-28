@@ -1,0 +1,141 @@
+/*
+MIT License
+
+Copyright (c) 2020 ThePool.io
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+.App {
+  position: relative;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-image: linear-gradient(90deg, #122272 0%, #1940b0 100%);
+  padding: 10rem 2rem 10rem 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  position: relative;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 8px 15px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  min-width: 3rem;
+  max-width: 100%;
+  width: 100%;
+  margin: 0.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border: 2px solid #16a3fe;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  position: relative;
+  border-radius: 5px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #16a3fe;
+}
+
+@media only screen and (max-width: 1350px) {
+  .btn {
+
+
+    position: relative;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    min-width: 2rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 0.2rem;
+  
+    margin-bottom: 1rem;
+    border: 2px solid #16a3fe;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 5px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #16a3fe;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #23c99d 0%, #16a3fe 100%);
+  transition: 0.5s all;
+}
+
+.btn:hover:disabled, .btn:disabled {
+  cursor: not-allowed;
+  background-color: darkgrey;
+  background-image: linear-gradient(to right, darkgrey 0%, darkgrey 100%) !important;
+
+}
+
+.Inner-app {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1350px) {
+  .Inner-app {
+    flex-direction: column;
+  }
+}
+
+.Outer-container {
+  width: 75%;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1350px) {
+  .Outer-container {
+    width: 100% !important;
+    flex-direction: column;
+  }
+}
